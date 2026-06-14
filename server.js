@@ -43,6 +43,11 @@ app.get("/hello", (req, res) => {
   res.send("Hello Team");
 });
 
+app.get("/auth", (req, res) => {
+  res.send("This is a auth endpoint. Authentication logic will be implemented here.");
+});
+
+
 app.get("/health", async (req, res) => {
   const start = Date.now();
   try {
