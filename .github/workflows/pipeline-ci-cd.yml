@@ -56,7 +56,7 @@ jobs:
             sudo docker run -d \
               --name backend-api \
               --network backend-api-net \
-              -p 3001:3001 \
+              -p 127.0.0.1:3001:3001 \
               -e MONGO_URI=${{ secrets.MONGO_URI }} \
               --restart=always \
               ${{ env.IMAGE_NAME }}
