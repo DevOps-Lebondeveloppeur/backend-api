@@ -40,8 +40,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hello", (req, res) => {
-  res.send("Hello Le bon developpeur Community ! - new feature 🚀");
+  res.send("Hello Team");
 });
+
+app.get("/auth", (req, res) => {
+  res.send("This is a auth endpoint. Authentication logic will be implemented here.");
+});
+
 
 app.get("/health", async (req, res) => {
   const start = Date.now();
