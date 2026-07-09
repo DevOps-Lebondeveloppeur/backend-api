@@ -1,7 +1,7 @@
 # ✅ Name of the Workflow
 name: Pipeline CI/CD Backend-api
 
-# ✅ Trigger this workflow on push to main branch
+# ✅ Trigger this workflow on push to main branch.
 on:
   push: 
     branches:
